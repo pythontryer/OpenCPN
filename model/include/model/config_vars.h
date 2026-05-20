@@ -252,6 +252,7 @@ extern int g_SOGFilterSec;
 extern int g_tcwin_scale;
 extern int g_trackFilterMax;
 extern int g_track_line_width;
+extern int g_TrackRefreshPeriod;  ///< Track display refresh period (seconds)
 extern int g_WplAction;
 extern int n_NavMessageShown;
 extern int sat_watchdog_timeout_ticks;
@@ -331,7 +332,6 @@ void InitBaseConfig(wxConfigBase* cfg);
  * Values correspond to TEMPERATURE_* enum (e.g., Celsius, Fahrenheit, Kelvin).
  * Used for weather overlays, tide info, and other temperature displays.
  */
-
 /**
  * \var g_iDistanceFormat
  *
@@ -432,6 +432,20 @@ void InitBaseConfig(wxConfigBase* cfg);
  * @note This configuration parameter stores the English name without
  * translation. Widgets may provide a localized version of this value when
  * displaying it to the user.
+ */
+
+/**
+ * \var g_TrackRefreshPeriod
+ *
+ * Configurable refresh period (in seconds) for track display when tracks are
+ * being shown. When set to a value > 0, the chart canvas will periodically
+ * refresh and update position even without user interaction.
+ *
+ * This is useful for users who want to monitor track playback or track
+ * display without manually interacting with the display.
+ *
+ * Default value: 0 (disabled)
+ * Valid range: 0-3600 seconds (0 disables the feature)
  */
 
 #endif  // CONFIG_VARS_H__
