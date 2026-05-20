@@ -26,7 +26,6 @@
 
 #include "model/config_vars.h"
 #include "config.h"
-
 bool g_allow_arb_system_plugin = false;
 bool g_always_send_rmb_rmc = false;
 bool g_bAISRolloverShowClass = false;
@@ -235,6 +234,7 @@ int g_SOGFilterSec = 0;
 int g_tcwin_scale = 0.0;
 int g_trackFilterMax = 0;
 int g_track_line_width = 0;
+int g_TrackRefreshPeriod = 0;  ///< Track display refresh period (seconds)
 int g_WplAction = 0;
 int n_NavMessageShown = 0;
 int sat_watchdog_timeout_ticks = 12;
