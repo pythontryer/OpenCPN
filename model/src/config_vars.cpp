@@ -15,6 +15,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>. *
  **************************************************************************/
 
+
 /**
  * \file
  *
@@ -24,8 +25,11 @@
 
 #include <vector>
 
+
 #include "model/config_vars.h"
 #include "config.h"
+
+
 bool g_allow_arb_system_plugin = false;
 bool g_always_send_rmb_rmc = false;
 bool g_bAISRolloverShowClass = false;
@@ -91,7 +95,6 @@ bool g_bShowTrue = false;
 bool g_bShowWptName = false;
 bool g_bsimplifiedScalebar = false;
 bool g_bskew_comp = false;
-bool g_bsmoothpanzoo = false;
 bool g_bsmoothpanzoom = false;
 bool g_bSoftwareGL = false;
 bool g_bSpaceDropMark = false;
@@ -118,6 +121,7 @@ bool g_useMUI = false;
 bool s_bSetSystemTime = false;
 bool g_kiosk_startup = false;
 bool g_disableNotifications = false;
+
 
 double g_COGAvg = 0.0;
 double g_defaultBoatSpeed = 0.0;
@@ -244,6 +248,7 @@ long g_maintoolbar_orient = 0L;
 
 std::vector<std::string> TideCurrentDataSet;
 
+
 unsigned g_canvasConfig = kUndefinedColor;
 unsigned g_dm_dropped = kUndefinedColor;
 unsigned g_dm_filtered = kUndefinedColor;
@@ -251,6 +256,7 @@ unsigned g_dm_input = kUndefinedColor;
 unsigned g_dm_not_ok = kUndefinedColor;
 unsigned g_dm_ok = kUndefinedColor;
 unsigned g_dm_output = kUndefinedColor;
+
 
 wxString g_active_route;
 wxString g_AW1GUID;
